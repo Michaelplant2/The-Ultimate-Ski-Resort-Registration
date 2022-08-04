@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The ultimate ski adventure</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="left-container">
+      <h1>Register for the ultimate ski adventure</h1>
+
+      <div class="form-container">
+        <form class="form" name="form" action="#" target="_self" method="post">
+          <h3>Your basic info</h3>
+
+          <fieldset class="names">
+            <label class="form-label" for="name">Name and surname *</label>
+            <input class="form-input" type="text" id="name" name="name" required>
+          </fieldset>
+
+          <div class="email-pass media">
+            <fieldset class="email">
+              <label class="form-label" for="email">Email *</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder=" example@email.com" required>
+              <p class="req-text">this field is required</p>
+            </fieldset>
+
+            <fieldset class="password">
+              <label class="form-label" for="password">Password *</label>
+              <input class="form-input" type="password" id="password" name="password" placeholder=" ****" required>
+            </fieldset>
+          </div>
+
+          <fieldset class="age">
+            <p>Age</p>
+            <input class="radio-input" type="radio" id="under-18" name="age">
+            <label for="under-18">Under 18</label><br>
+            <input class="radio-input" type="radio" id="over-18" name="age">
+            <label for="over-18">18 and over</label>
+          </fieldset>
+
+          <h3>Tell us about yourself</h3>
+
+          <fieldset class="bio">
+            <label class="form-label" for="bio">Your biography</label>
+            <textarea class="form-input" id="bio" name="bio"></textarea>
+          </fieldset>
+
+          <fieldset class="location">
+            <label class="form-label" for="location">Select location</label>
+            <select class="form-input" id="location" name="location">
+              <option disabled value>Select an option</option>
+              <option value="mayrhofen">Mayrhofen</option>
+              <option value="north_america">North America</option>
+              <option value="europe">Europe</option>
+              <option value="asia">Asia</option>
+              <option value="africa">Africa</option>
+              <option value="south_america">South America</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="equipment">
+            <p>What equipment would you like to rent?</p>
+            <input class="checkbox" type="checkbox" id="skis" name="skis">
+            <label for="skis">Skis</label><br>
+            <input class="checkbox" type="checkbox" id="helmet" name="helmet">
+            <label for="helmet">Helmet</label><br>
+            <input class="checkbox" type="checkbox" id="goggles" name="goggles">
+            <label for="goggles">Goggles</label><br>
+            <input class="checkbox" type="checkbox" id="ski_boots" name="ski_boots">
+            <label for="ski_boots">Ski boots</label><br>
+            <input class="checkbox" type="checkbox" id="ski_poles" name="ski_poles">
+            <label for="ski_poles">Ski poles</label>
+          </fieldset>
+
+          <div class="btn media">
+            <input type="reset" class="reset-btn">
+            <input type="submit" class="submit-btn">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="right-container">
+      <h2>Epic experience in the snow</h2>
+    </div>
+  </div>
+</body>
+
+</html>

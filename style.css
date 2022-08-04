@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-container {
+  display: flex;
+  padding: 20px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: Nunito;
+  font-weight: bold;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: Nunito;
+  font-weight: bold;
+  padding: 20px;
+}
+
+h3 {
+  font-family: Nunito;
+  font-weight: bold;
+}
+
+p {
+  font-family: Nunito;
+}
+
+fieldset {
+  margin: 5px 0;
+  padding: 0;
+  border: none;
+}
+
+.form-label {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #E2E5ED;
+  color: #979797;
+  outline: 0; 
+}
+
+.email-pass {
+  display: grid;
+  margin-bottom: 20px;
+}
+
+.age {
+  margin-bottom: 30px;
+}
+
+.equipment {
+  margin: 10px 0;
+}
+
+.req-text {
+  color: #DD310C;
+  margin-top: 5px;
+}
+
+.btn {
+  display: grid;
+}
+
+.reset-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #149770;
+  color: #FFFFFF;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-image: url(assets/ski.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF; 
+  background-position: right;
+  position: relative;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .media {
+    grid-template-columns: 48.7804878% 48.7804878%;
+    grid-column-gap: 2.43902439%;
+  }
+}
